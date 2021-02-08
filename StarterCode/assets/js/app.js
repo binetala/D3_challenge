@@ -116,19 +116,6 @@ d3.csv("assets/data/data.csv").then(function(Data) {
 
     chartGroup.call(toolTip);
 
-    // Create event listeners to display and hide the tooltip
-
-    // circlesGroup.on("mouseover", function(data) {
-    //     toolTip.show(data, this)
-    //     d3.select(this).style("fill", "blue").transition().duration(100);
-
-    //   })
-      
-    //     // Event Listener for on-mouseout event
-    //     .on("mouseout", function(data, index) {
-    //       toolTip.hide(data)
-    //       d3.select(this).style("fill","red").transition().duration(0);
-    //     });
 
     // Create axes labels
     chartGroup
@@ -148,4 +135,4 @@ d3.csv("assets/data/data.csv").then(function(Data) {
 
   }).catch(function(error) {
     console.log(error);
-  });
+  })
